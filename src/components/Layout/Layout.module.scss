@@ -1,0 +1,15 @@
+@import "../../styles/resources";
+
+.container {
+  min-width: 430px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $light-greyscale-bg-light;
+
+  .content {
+    flex: 1 0 auto;
+
+    padding: 44px 70px 86px;
+  }
+}

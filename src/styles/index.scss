@@ -1,0 +1,80 @@
+@import "./resources/index";
+@import "./normalize";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: $desktop-text-medium-font-size;
+  font-weight: $desktop-text-regular-font-weight;
+  line-height: $desktop-text-medium-line-height;
+  color: $light-greyscale-text-primary;
+  background-color: $light-greyscale-bg-light;
+  overflow-x: hidden;
+
+  @media (max-width: $tablet-width) {
+    font-size: $tablet-text-medium-font-size;
+    font-weight: $tablet-text-regular-font-weight;
+    line-height: $tablet-text-medium-line-height;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: $mobile-text-medium-font-size;
+    font-weight: $mobile-text-regular-font-weight;
+    line-height: $mobile-text-medium-line-height;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  outline: none;
+}
+
+a,
+p,
+li,
+td {
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $light-greyscale-text-primary;
+}
+
+h1 {
+  font-size: $desktop-h1-font-size;
+  font-weight: $desktop-h1-font-weight;
+  line-height: $desktop-h1-line-height;
+
+  @media (max-width: $tablet-width) {
+    font-size: $tablet-h1-font-size;
+    font-weight: $tablet-h1-font-weight;
+    line-height: $tablet-h1-line-height;
+  }
+  @media (min-width: $mobile-width) {
+    font-size: $mobile-h1-font-size;
+    font-weight: $mobile-h1-font-weight;
+    line-height: $mobile-h1-line-height;
+  }
+}
+
+img {
+  display: block;
+}

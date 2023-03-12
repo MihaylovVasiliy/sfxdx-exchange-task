@@ -1,0 +1,73 @@
+@import "../../styles/resources";
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  overflow: hidden;
+
+  .animatedRound {
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 80vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    &:nth-child(0) {
+      color: $light-accents-accent1-quaternary;
+      top: 33%;
+      left: 4%;
+      animation-duration: 12s;
+      animation-delay: -1s;
+      transform-origin: -1vw -2vh;
+      box-shadow: -100vmin 0 13.43303797985613vmin currentColor;
+      opacity: 0.5;
+    }
+
+    &:nth-child(1) {
+      color: $light-accents-accent1-primary;
+      top: 31%;
+      left: 46%;
+      animation-duration: 12s;
+      animation-delay: -1s;
+      transform-origin: 2vw 4vh;
+      box-shadow: 100vmin 0 13.213931745350338vmin currentColor;
+      opacity: 0.15;
+    }
+
+    &:nth-child(2) {
+      color: $light-accents-accent1-quaternary;
+      top: 20%;
+      left: 37%;
+      animation-duration: 12s;
+      animation-delay: -1s;
+      transform-origin: 4vw 8vh;
+      box-shadow: -100vmin 0 13.27772526174463vmin currentColor;
+      opacity: 0.5;
+    }
+
+    &:nth-child(3) {
+      color: $light-accents-accent1-primary;
+      top: 25%;
+      left: 3%;
+      animation-duration: 12s;
+      animation-delay: -1s;
+      transform-origin: -10vw 20vh;
+      box-shadow: 100vmin 0 12.581065124285445vmin currentColor;
+      opacity: 0.15;
+    }
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}

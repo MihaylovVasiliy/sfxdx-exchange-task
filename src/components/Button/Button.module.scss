@@ -1,0 +1,94 @@
+@import "../../styles/resources";
+
+.btn {
+  border: none;
+  border-radius: $border-raduis-btn;
+  outline: inherit;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: $btns-text-font-weight;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.large {
+  padding: 12px 32px;
+  font-size: $btns-text-large-font-size;
+  line-height: $btns-text-large-line-height;
+}
+
+.medium {
+  padding: 10px 32px;
+  font-size: $btns-text-medium-font-size;
+  line-height: $btns-text-medium-line-height;
+}
+
+.small {
+  padding: 8px 24px;
+  font-size: $btns-text-small-font-size;
+  line-height: $btns-text-small-line-height;
+}
+
+.xs {
+  padding: 6px 20px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.primary {
+  color: $light-greyscale-white;
+  background-color: $light-accents-accent1-primary;
+  box-shadow: 0px 8px 16px rgba(8, 216, 153, 0.2);
+
+  &:hover {
+    background-color: $light-accents-state-hover;
+    box-shadow: $light-dropshadows-z100;
+  }
+
+  &:active {
+    background-color: $light-accents-state-click;
+    box-shadow: $light-dropshadows-z100;
+  }
+
+  &:focus-visible {
+    box-shadow: $light-focus-btn;
+  }
+
+  &:disabled {
+    color: $light-greyscale-disabled-text;
+    background-color: $light-greyscale-disabled-bg;
+  }
+}
+
+.secondary {
+  color: $light-accents-accent1-primary;
+  background-color: $light-greyscale-white;
+  padding: 10px 12px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $light-accents-state-hover;
+    box-shadow: $light-dropshadows-z100;
+  }
+
+  &:active {
+    background-color: $light-accents-state-click;
+    box-shadow: $light-dropshadows-z100;
+  }
+
+  &:focus-visible {
+    box-shadow: $light-focus-btn;
+  }
+
+  &:disabled {
+    color: $light-greyscale-disabled-text;
+    background-color: $light-greyscale-disabled-bg;
+  }
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
